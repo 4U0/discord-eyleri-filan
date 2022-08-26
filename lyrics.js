@@ -48,7 +48,7 @@ $(`
             </div>
         </div>
         <div class="settings-tab-sub">
-            <span>Menu style</span>
+            <span>Menu stili</span>
             <div>
                 <label for="opacity-range-slider">Opaklık</label>
                 <input id="opacity-range-slider" class="range-slider1" type="range" min="50" max="100" value="90">
@@ -496,7 +496,7 @@ function formatSeconds(s){
     return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0' ) + s;
 }
 function getStatusString(lyrics, time) {
-    return `${settings.view.timestamp ? `[${formatSeconds((time / 1000).toFixed(0))}] ` : ""}${settings.view.label ? "Song lyrics - " : ""}${lyrics}`
+    return `${settings.view.timestamp ? `[${formatSeconds((time / 1000).toFixed(0))}] ` : ""}${settings.view.label ? "Lyrics - " : ""}${lyrics}`
 }
 function sleep(ms) {
     return new Promise((res, rej) => setTimeout(res, ms));
